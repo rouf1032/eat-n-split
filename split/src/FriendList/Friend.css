@@ -1,0 +1,28 @@
+
+li {
+    width: 450px;
+    display: grid;
+    margin: 20px;
+    grid-template-columns: 5rem 1fr auto;
+    grid-template-areas: "img h4 button"
+                          "img p button";
+    justify-items: start;
+    
+}
+
+img {
+    grid-area: img;
+}
+
+h4 {
+    grid-area: h4;
+}
+
+p {
+    grid-area: p;
+}
+
+button {
+    grid-area: button;
+}
+

@@ -74,7 +74,7 @@ img {
 
 .app {
   display: grid;
-  grid-template-columns: 34rem 44rem;
+  grid-template-columns: 28rem 35rem;
   column-gap: 4rem;
   align-items: start;
 }

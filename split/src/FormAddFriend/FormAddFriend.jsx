@@ -1,5 +1,6 @@
 import React from 'react';
 import './FormAddFriend.css'
+import Button from '../Button';
 
 const FormAddFriend = () => {
     return (
@@ -14,7 +15,7 @@ const FormAddFriend = () => {
         type="text"
       />
 
-      <button>Add</button>
+      <Button>Add</Button>
     </form>
     );
 };

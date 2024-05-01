@@ -1,5 +1,6 @@
 import React from 'react';
 import './Friend.css'
+import Button from '../Button';
 
 const Friend = ({friend}) => {
     const {name,image,balance} = friend;
@@ -10,7 +11,7 @@ const Friend = ({friend}) => {
         {balance < 0 && (<p>You owe {name} ${Math.abs(balance)}</p>)}
         {balance > 0 && (<p>{name} owes you ${Math.abs(balance)}</p>)}
         {balance === 0 && (<p>You both are even</p>)}
-        <button className='button'>Select</button>
+        <Button>Select</Button>
         </li>
     );
 };

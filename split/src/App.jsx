@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Friends from './FriendList/Friends'
 import FormAddFriend from './FormAddFriend/FormAddFriend'
 import FormSplitBill from './FormSplitBill/FormSplitBill'
+import Button from './Button'
 
 const FriendsList = [
   {id:101,name:"John Smidth",image:"https://i.postimg.cc/bYMvRkQy/pexels-olly-839011.jpg",balance:-7},
@@ -12,12 +13,18 @@ const FriendsList = [
 
 function App() {
 
+  const [showAddFriend, setShowAddFriend] = useState(false)
+  const handleShowAddFriend = () => {
+    setShowAddFriend((show) => !show)
+    console.log(showAddFriend);
+  }
+
   return (
     <div className='app'>
       <div className="sidebar">
       <Friends friends={FriendsList}/>
-      <FormAddFriend />
-      <button>Add Friend</button>
+      {showAddFriend && <FormAddFriend />}
+      <Button onclick={handleShowAddFriend}>{showAddFriend ? 'Close' : 'Add Friend'}</Button>
       </div>
       <FormSplitBill />
       

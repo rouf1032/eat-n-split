@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Friends from './FriendList/Friends'
 import FormAddFriend from './FormAddFriend/FormAddFriend'
+import FormSplitBill from './FormSplitBill/FormSplitBill'
 
 const FriendsList = [
   {id:101,name:"John Smidth",image:"https://i.postimg.cc/bYMvRkQy/pexels-olly-839011.jpg",balance:-7},
@@ -16,7 +17,9 @@ function App() {
       <div className="sidebar">
       <Friends friends={FriendsList}/>
       <FormAddFriend />
+      <button>Add Friend</button>
       </div>
+      <FormSplitBill />
       
     </div>
   )

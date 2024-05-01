@@ -53,7 +53,10 @@ a:hover {
 body {
   margin: 0;
   min-width: 320px;
-  min-height: 100vh;
+  height: 66vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
 h1 {
@@ -67,4 +70,20 @@ img {
   height: 55px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 34rem 44rem;
+  column-gap: 4rem;
+  align-items: start;
+}
+ button {
+  grid-column: 2;
+  border: none;
+  background-color: rgb(228, 177, 109);
+  padding: 0.5rem 0.4rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
 }

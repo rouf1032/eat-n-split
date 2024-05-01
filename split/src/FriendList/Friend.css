@@ -1,5 +1,5 @@
 
-li {
+/* li {
     width: 450px;
     display: grid;
     margin: 20px;
@@ -8,21 +8,46 @@ li {
                           "img p button";
     justify-items: start;
     
+} */
+
+.sidebar li {
+    display: grid;
+    grid-template-columns: 4.8rem 1fr auto;
+    align-items: center;
+    column-gap: 1.6rem;
+  
+    padding: 1.2rem;
+    border-radius: 7px;
+    transition: 0.5s;
+  }
+
+  .selected,
+  .sidebar li:hover {
+    background-color: var(--color-lightest);
+  }
+  
+.sidebar li img {
+  border-radius: 50%;
+  width: 100%;
+  grid-row: span 2;
 }
 
-img {
-    grid-area: img;
+.sidebar li h3 {
+  grid-row: 1;
+  grid-column: 2;
 }
 
-h4 {
-    grid-area: h4;
+.sidebar li p {
+  grid-row: 2;
+  grid-column: 2;
 }
 
-p {
-    grid-area: p;
+.sidebar li .button {
+  grid-row: span 2;
+  grid-column: 3;
 }
 
-button {
-    grid-area: button;
+.sidebar > .button {
+  float: right;
+  margin-right: 1.2rem;
 }
-

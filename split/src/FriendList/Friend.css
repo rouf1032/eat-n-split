@@ -21,10 +21,7 @@
     transition: 0.5s;
   }
 
-  .selected,
-  .sidebar li:hover {
-    background-color: var(--color-lightest);
-  }
+
   
 .sidebar li img {
   border-radius: 50%;
@@ -50,4 +47,9 @@
 .sidebar > .button {
   float: right;
   margin-right: 1.2rem;
+}
+
+.selected {
+  background-color: indianred;
+  transition: none;
 }
